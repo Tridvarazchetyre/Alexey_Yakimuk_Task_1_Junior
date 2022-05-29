@@ -1,8 +1,8 @@
 package com.interview.project.rest.exceptions;
 
-public abstract class RestException extends Exception{
+public abstract class RestException extends RuntimeException{
 
-    private static int statusCode;
+    private int statusCode;
     private String message;
 
     public RestException() {
